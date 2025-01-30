@@ -19,13 +19,13 @@ Many students struggle to find quality tutoring services that fit their schedule
 
 ### App Functions  
 
-#### 1. Customer (Kannan Thilak) Role  
+#### 1. Customer (Role - Student)  
 1. **Create/Modify Customer Profile** – Students can sign up, edit their profile details, and set learning preferences.  
 2. **View Available Tutors** – Browse tutors based on subjects, availability, and ratings.  
 3. **Book Tutoring Sessions** – Schedule sessions with selected tutors and receive confirmation notifications.  
 4. **Write Reviews** – Provide feedback and rate tutors based on session experience.  
 
-#### 2. Provider (Kannan Thilak) Role  
+#### 2. Provider (Role - Tutor)   
 1. **Create/Modify/Remove Tutor Profile** – Tutors can register, set their expertise, availability, and profile information.  
 2. **List Subjects & Availability** – Tutors can specify the subjects they teach and update their schedule.  
 3. **Manage Student Interactions** – Tutors can accept/reject session requests and communicate with students.  
