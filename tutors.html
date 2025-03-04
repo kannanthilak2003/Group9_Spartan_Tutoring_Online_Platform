@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Tutors - Spartan Tutoring</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFFFF;
+            color: #003366;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #003366;
+            color: #FFCC33;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #808080;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: #F8F8F8;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+        .tutor-card {
+            background-color: #FFFFFF;
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            background-color: #FFCC33;
+            color: #003366;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #FFD966;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Available Tutors</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="tutors.html">Find a Tutor</a></li>
+            <li><a href="bookings.html">Book a Session</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Find the Right Tutor for You</h2>
+        <div class="tutor-card">
+            <h3>John Doe</h3>
+            <p>Subjects: Math, Physics</p>
+            <p>Availability: Monday - Friday</p>
+            <button class="btn"><a href="bookings.html">Book Session</a></button>
+        </div>
+        <div class="tutor-card">
+            <h3>Jane Smith</h3>
+            <p>Subjects: English, History</p>
+            <p>Availability: Weekends</p>
+            <button class="btn"><a href="bookings.html">Book Session</a></button>
+        </div>
+    </div>
+</body>
+</html>

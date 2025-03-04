@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up / Sign In - Spartan Tutoring</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFFFF;
+            color: #003366;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #003366;
+            color: #FFCC33;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #808080;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            background-color: #F8F8F8;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn {
+            background-color: #FFCC33;
+            color: #003366;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: block;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #FFD966;
+        }
+        .toggle-link {
+            margin-top: 10px;
+            display: block;
+            color: #003366;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Spartan Tutoring</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="tutors.html">Find a Tutor</a></li>
+            <li><a href="bookings.html">Book a Session</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2 id="form-title">Create Your Account</h2>
+        <form id="signup-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email (User ID)</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn"><a href="tutors.html">Find a TutorSign Up</a></button>
+        </form>
+        
+        <form id="signin-form" style="display: none;">
+            <div class="form-group">
+                <label for="signin-email">Email (User ID)</label>
+                <input type="email" id="signin-email" name="signin-email" required>
+            </div>
+            <div class="form-group">
+                <label for="signin-password">Password</label>
+                <input type="password" id="signin-password" name="signin-password" required>
+            </div>
+            <button type="submit" class="btn"><a href="tutors.html">Sign In</a></button>
+        </form>
+        
+        <span class="toggle-link" onclick="toggleForm()">Already have an account? Sign In</span>
+    </div>
+
+    <script>
+        function toggleForm() {
+            const signupForm = document.getElementById("signup-form");
+            const signinForm = document.getElementById("signin-form");
+            const formTitle = document.getElementById("form-title");
+            const toggleLink = document.querySelector(".toggle-link");
+
+            if (signupForm.style.display === "none") {
+                signupForm.style.display = "block";
+                signinForm.style.display = "none";
+                formTitle.textContent = "Create Your Account";
+                toggleLink.textContent = "Already have an account? Sign In";
+            } else {
+                signupForm.style.display = "none";
+                signinForm.style.display = "block";
+                formTitle.textContent = "Sign In to Your Account";
+                toggleLink.textContent = "Don't have an account? Sign Up";
+            }
+        }
+    </script>
+</body>
+</html>
