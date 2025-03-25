@@ -1,0 +1,138 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    background-color: #343a40 !important;
+  }
+  
+  .navbar a {
+    color: #ffffff !important;
+  }
+  
+  .navbar a:hover {
+    color: #ffc107 !important;
+  }
+  
+  /* Dashboard Header */
+  .dashboard-header {
+    background-color: #007bff;
+    padding: 30px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+  
+  .dashboard-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .dashboard-header p {
+    font-size: 1.2rem;
+  }
+  
+  /* Section Title */
+  .section-title {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  /* Card Styles */
+  .card {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-bottom: 30px;
+  }
+  
+  /* Button Styles */
+  .btn-custom {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .btn-custom:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+  }
+  
+  .btn-info {
+    background-color: #17a2b8;
+  }
+  
+  .btn-info:hover {
+    background-color: #138496;
+  }
+  
+  .btn-sm {
+    font-size: 0.875rem;
+  }
+  
+  /* Card Body */
+  .card-body {
+    padding: 20px;
+  }
+  
+  /* List Group Styles */
+  .list-group-item {
+    padding: 15px;
+    font-size: 1rem;
+  }
+  
+  .list-group-item + .list-group-item {
+    border-top: 1px solid #f0f0f0;
+  }
+  
+  .list-group-item button {
+    margin-right: 10px;
+  }
+  
+  /* Table Styles */
+  .table {
+    background-color: #fff;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  .table-bordered th, .table-bordered td {
+    border: 1px solid #ddd !important;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .dashboard-header {
+        padding: 20px;
+    }
+  
+    .section-title {
+        font-size: 1.4rem;
+    }
+  
+    .card-body {
+        padding: 15px;
+    }
+  }
+  
